@@ -53,12 +53,12 @@ function displayData(){
     let statement="";
     userArray.forEach((user,id)=>{
         statement+=`<tr style="  "  >
-        <td>${id+1}</td>
-          <td>${user.name}</td>
-          <td>${user.discription}</td>
-          <td style="display:flex;justify-content: space-between;color:red;
-          "><i class="fa fa-edit " style="font-size:28px;   cursor: pointer;"  onclick="editData(${id})"></i>
-          <i class="fa fa-times-circle" style="font-size:28px;  cursor: pointer;" onclick="deleteData(${id})"></i></td>
+        <td style="width:5%;">${id+1}</td>
+          <td style="width:15%;">${user.name}</td>
+          <td style="width:60%; ">${user.discription}</td>
+          <td style="color:red ";
+          "><i  class="fa fa-edit " style="font-size:28px; margin-right:1em;  cursor: pointer;"  onclick="editData(${id})"></i>
+          <i  class="fa fa-times-circle" style="font-size:28px;  cursor: pointer;" onclick="deleteData(${id})"></i></td>
           </tr>
         
        `
